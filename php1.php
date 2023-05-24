@@ -12,3 +12,12 @@ echo "no mês", $mes, "Teremos ", $anos, " anos de casa.";
 echo '<br >/;
 echo "Percorreu {$dist}km<br />";
 echo "Vinicius percorreus ".$dist.'Km';
+
+<?php
+$maxSal = 1000;
+$str=<<<SQL
+  SELECT FROM
+  WHERE salario > $maxSal and
+    codDepart = 'Vendas'
+  SQL;
+echo $str;
